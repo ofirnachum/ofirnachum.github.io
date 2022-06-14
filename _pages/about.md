@@ -8,5 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-This is Ofir Nachum's website. For contact information, you can find my preferred email listed in most of my publications.
+This is my website, which I will use to post thoughts and ideas. 
+
+For my publications, please see my Google Scholar (link on the sidebar).
+
+For contact information, please find my preferred email listed in any of my recent publications.
 
