@@ -7,15 +7,16 @@ tags:
 ---
 
 Main Takeaways
-======
+------
 - When tackling a new problem, implement a variety of baseline methods to build an understanding of what works and what doesn’t. If nothing works, you may need to reframe your problem.
 
 - When tackling a new problem, implement oracles to confirm or refute your understanding of the key challenges in your problem. If results are not what you expected, you need to either change your understanding of the problem or change the problem itself.
 
 - Continue to use baselines and oracles throughout your research. When your progress stalls, cleverly designed oracles can help pinpoint the main bottlenecks. By the same token, simple baseline “patches” (think like a practitioner!) can unblock your path.
 
+---
 
-In the recent past, I was working on a research project focused on representation learning. I had achieved initial promising results and was in the midst of continuing to try to improve the representation learning objective, under the assumption that there were still benefits to be gained by learning a better representation. I made numerous attempts at changing various components of my algorithm, but over the course of two months ultimate performance wouldn’t budge. I then decided to try running a test: I would devise an “ideal” representation based on my own knowledge of the task and give this ideal representation directly to my model. Certainly, an ideal handcrafted representation should improve performance! Lo and behold, the performance with this oracle representation was no better than my initial promising results. It was now embarrassingly clear that I had already solved the “representation learning” aspect of my problem and whatever remained to solve was orthogonal to representation learning. Looking back, I wish I could have those two months back….
+In the recent past, I was working on a research project focused on representation learning. I had achieved initial promising results and was in the midst of continuing to try to improve the representation learning objective, under the assumption that there were still benefits to be gained by learning a better representation. I made numerous attempts at changing various components of my algorithm, but over the course of two months ultimate performance wouldn’t budge. I then decided to try running a test: I would devise an “ideal” representation based on my own knowledge of the task and give this ideal representation directly to my model. Certainly, an ideal handcrafted representation should improve performance! Lo and behold, the performance with this oracle representation was no better than my initial promising results. It was now embarrassingly clear that I had already solved the “representation learning” aspect of my problem and whatever remained to solve was orthogonal to representation learning. Looking back, I wish I could have those two months back....
 
 The above is an example of using an oracle as a tool for doing research. In addition and complementary to oracles, the use of baselines is also key for doing effective research. An oracle is a solution to a research question that violates some assumptions of the problem, or a solution that uses privileged knowledge or access to solve the problem. A baseline is a naive solution to the problem, a straightforward application of existing methods to solve the problem. Oracles provide a rough ceiling on the best performance one can realistically hope to achieve, while baselines show what performance is achievable using existing methods.
 
