@@ -6,13 +6,13 @@ tags:
   - research
 ---
 
-Main Takeaways
-------
-- When tackling a new problem, implement a variety of baseline methods to build an understanding of what works and what doesn’t. If nothing works, you may need to reframe your problem.
+*Main Takeaways*
 
-- When tackling a new problem, implement oracles to confirm or refute your understanding of the key challenges in your problem. If results are not what you expected, you need to either change your understanding of the problem or change the problem itself.
+- *When tackling a new problem, implement a variety of baseline methods to build an understanding of what works and what doesn’t. If nothing works, you may need to reframe your problem.*
 
-- Continue to use baselines and oracles throughout your research. When your progress stalls, cleverly designed oracles can help pinpoint the main bottlenecks. By the same token, simple baseline “patches” (think like a practitioner!) can unblock your path.
+- *When tackling a new problem, implement oracles to confirm or refute your understanding of the key challenges in your problem. If results are not what you expected, you need to either change your understanding of the problem or change the problem itself.*
+
+- *Continue to use baselines and oracles throughout your research. When your progress stalls, cleverly designed oracles can help pinpoint the main bottlenecks. By the same token, simple baseline “patches” (think like a practitioner!) can unblock your path.*
 
 ---
 
