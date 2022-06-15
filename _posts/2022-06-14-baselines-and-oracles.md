@@ -6,16 +6,6 @@ tags:
   - research
 ---
 
-*Main Takeaways*
-
-- *When tackling a new problem, implement a variety of baseline methods to build an understanding of what works and what doesn’t. If nothing works, you may need to reframe your problem.*
-
-- *When tackling a new problem, implement oracles to confirm or refute your understanding of the key challenges in your problem. If results are not what you expected, you need to either change your understanding of the problem or change the problem itself.*
-
-- *Continue to use baselines and oracles throughout your research. When your progress stalls, cleverly designed oracles can help pinpoint the main bottlenecks. By the same token, simple baseline “patches” (think like a practitioner!) can unblock your path.*
-
----
-
 In the recent past, I was working on a research project focused on representation learning. I had achieved initial promising results and was in the midst of continuing to try to improve the representation learning objective, under the assumption that there were still benefits to be gained by learning a better representation. I made numerous attempts at changing various components of my algorithm, but over the course of two months ultimate performance wouldn’t budge. I then decided to try running a test: I would devise an “ideal” representation based on my own knowledge of the task and give this ideal representation directly to my model. Certainly, an ideal handcrafted representation should improve performance! Lo and behold, the performance with this oracle representation was no better than my initial promising results. It was now embarrassingly clear that I had already solved the “representation learning” aspect of my problem and whatever remained to solve was orthogonal to representation learning. Looking back, I wish I could have those two months back....
 
 The above is an example of using an oracle as a tool for doing research. In addition and complementary to oracles, the use of baselines is also key for doing effective research. An oracle is a solution to a research question that violates some assumptions of the problem, or a solution that uses privileged knowledge or access to solve the problem. A baseline is a naive solution to the problem, a straightforward application of existing methods to solve the problem. Oracles provide a rough ceiling on the best performance one can realistically hope to achieve, while baselines show what performance is achievable using existing methods.
@@ -33,3 +23,13 @@ This sort of debugging of your assumptions is critical not only at the beginning
 Just like oracles are a useful debugging tool throughout a research project, baselines are also important to keep in mind when encountering issues mid-project. For example, let’s say you’re in the middle of a research project. You’ve already found an approach that gets good results but ends up overfitting massively. A common mistake junior researchers make is concluding that their approach has a fatal flaw and that they have to rebuild it from scratch to handle overfitting. Don’t fall into this trap, and instead think like a practitioner! What would a practitioner do? They would simply try common tools people already use to fix overfitting – weight regularization, early stopping, learning rate decay, etc. – and use whatever works best. 
 
 I hope you will use the concepts of baselines and oracles to accelerate your own research. And if you’ve already been using these tools under different names, let me know! I’d be interested to hear of other instances where these techniques have been critical to doing impactful research.
+
+***
+
+*Main Takeaways*
+
+- *When tackling a new problem, implement a variety of baseline methods to build an understanding of what works and what doesn’t. If nothing works, you may need to reframe your problem.*
+
+- *When tackling a new problem, implement oracles to confirm or refute your understanding of the key challenges in your problem. If results are not what you expected, you need to either change your understanding of the problem or change the problem itself.*
+
+- *Continue to use baselines and oracles throughout your research. When your progress stalls, cleverly designed oracles can help pinpoint the main bottlenecks. By the same token, simple baseline “patches” (think like a practitioner!) can unblock your path.*
