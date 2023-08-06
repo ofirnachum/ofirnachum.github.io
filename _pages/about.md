@@ -12,5 +12,5 @@ This is my website, which I will use to post thoughts and ideas.
 
 For my publications, please see my Google Scholar (link on the sidebar).
 
-For contact information, please find my preferred email listed in any of my recent publications.
+For contact information, please find my preferred email listed in any of my recent publications. Just make sure to switch the domain to my current employer.
 
